@@ -1,3 +1,7 @@
+# Microsoft Learn: Store local data with SQLite
+
+[//]: # (TODO: Link back to Microsoft Learn module.)
+This project contains the source code for the **Store local data with SQLite** Microsoft Learn module.
 
 # Contributing
 
