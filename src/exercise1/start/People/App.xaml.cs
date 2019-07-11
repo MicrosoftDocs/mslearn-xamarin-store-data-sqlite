@@ -9,13 +9,15 @@ namespace People
 {
     public partial class App : Application
     {
-        public App(string displayText)
+        string dbPath => FileAccessHelper.GetLocalFilePath("people.db3");
+
+        public App()
         {
             InitializeComponent();
 
             MainPage = new People.MainPage()
             {
-                Text = displayText,
+                Text = dbPath,
             };
         }
 
