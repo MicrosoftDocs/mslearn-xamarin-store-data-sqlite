@@ -9,9 +9,11 @@ namespace People
 {
     public partial class App : Application
     {
+        string dbPath => FileAccessHelper.GetLocalFilePath("people.db3");
+
         public static PersonRepository PersonRepo { get; private set; }
 
-        public App(string dbPath)
+        public App()
         {
             InitializeComponent();
 

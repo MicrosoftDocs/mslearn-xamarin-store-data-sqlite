@@ -21,8 +21,7 @@ namespace People.Droid
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            string dbPath = FileAccessHelper.GetLocalFilePath("people.db3");
-            LoadApplication(new App(dbPath));
+            LoadApplication(new App());
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
